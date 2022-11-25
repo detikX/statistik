@@ -1,0 +1,92 @@
+footer {
+  background: #0c0c0c;
+  color: #cdcdcd;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  .container {
+    background: none;
+  }
+  .foot1 {
+    border-bottom: 1px solid #939191;
+    border-bottom: 1px dotted #939191;
+    margin: 0 0 10px;
+    padding: 0 0 10px;
+  }
+  .footer {
+    position: relative;
+    z-index: 1;
+  }
+  a {
+    color: #fff;
+    &:hover {
+      color: #fff;
+    }
+  }
+  > .container {
+    padding: 20px;
+    // background: #777;
+  }
+  .foot2 {
+    div {
+      font-size: 13px;
+      margin-top: 7px;
+    }
+  }
+  .share_bottom {
+    display: block;
+    a {
+      display: inline-block;
+      img {
+        width: 35px;
+      }
+    }
+  }
+}
+.fr {
+  float: right !important;
+}
+.fl {
+  float: left !important;
+}
+@media (max-width: 768px) and (min-width: 320px) {
+  footer {
+    .foot1 {
+      .fl {
+        img {
+          width: 110px;
+        }
+      }
+    }
+  }
+}
+
+.cls_btn,
+header .menu.mob .close-btn,
+#search .close-btn {
+  @media screen and (max-width: 766px) {
+    width: 50px;
+    height: 50px;
+    border: 1px dashed #fff;
+    color: #fff;
+    display: block;
+    text-align: center;
+    position: absolute;
+    background: url("https://cdn.detik.net.id/xasset/images/close-btn.webp")
+      no-repeat center;
+    right: 5%;
+    top: 20px;
+  }
+}
+
+.cls_btn:hover,
+header .menu.mob .close-btn:hover,
+#search .close-btn:hover {
+  background: url("https://cdn.detik.net.id/xasset/images/close-btn.webp")
+    no-repeat center #f7941f;
+  color: #0c0c0c;
+}
+
+// https://cdn.detik.net.id/xasset/images/close-btn.webp
