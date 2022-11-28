@@ -391,6 +391,8 @@ section {
 .statistik {
   margin: 0 auto;
   text-align: center;
+  position: relative;
+  z-index: 20;
   h3 {
     @media screen and (max-width:766px) {
       font-size: 1.5rem;
@@ -406,6 +408,54 @@ section {
     display: inline-block;
     padding: 16px;
     background: #4161A6;
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   top: 50px;
+    //   bottom: 50%;
+    //   left: 0;
+    //   right: 50%;
+    //   background: rgba(0,0,0,.1);
+    //   transform: rotate(0deg);
+    //   border-radius: 0 0 16px 16px;
+    //   transform: skewY(10deg);
+    // }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 60%;
+      background: rgba(0,0,0,.1);
+      transform: rotate(0deg);
+      border-radius:  16px 0 0 16px;
+      // transform: skewY(10deg);
+    }
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   top: 0;
+    //   bottom: 0;
+    //   left: 0;
+    //   right: 70%;
+    //   background: rgba(0,0,0,.1);
+    //   transform: rotate(10deg);
+    //   // border-radius:  16px 0 0 16px;
+    //   // transform: skewY(10deg);
+    // }
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   bottom: 50px;
+    //   top: 50%;
+    //   left: 0;
+    //   right: 50%;
+    //   background: rgba(0,0,0,.1);
+    //   transform: rotate(0deg);
+    //   border-radius: 0 0 16px 16px;
+    //   transform: skewY(-10deg);
+    // }
     h3 {
       font-size: 1.5rem;
       font-weight: 600;
@@ -419,7 +469,7 @@ section {
     }
     .image {
       width: 45%;
-      height: 360px;
+      height: 380px;
       left: 0px;
       top: -42px;
       position: absolute;
@@ -440,6 +490,8 @@ section {
     .data {
       // display: inline-block;
       vertical-align: middle;
+      position: relative;
+      z-index: 16;
       color: white;
       width: 50%;
       float: right;
@@ -486,3 +538,5 @@ section {
     background: #65345f !important;
   }
 }
+
+//cek opacity
