@@ -211,14 +211,6 @@ font-family: 'Montserrat';
   padding-top: 400vh;
 }
 
-@keyframes bounce {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(0.5rem);
-  }
-}
 
 .kejutan{
     .d-block {
@@ -308,4 +300,172 @@ font-family: 'Montserrat';
         }
     }
     }
+}
+
+.statistik {
+    margin: 0 auto;
+    text-align: center;
+    // position: relative;
+    z-index: 20;
+    h3 {
+      @media screen and (max-width:766px) {
+        font-size: 1.5rem;
+      }
+    }
+    .top-skor {
+      width: 35%;
+      margin: 16px ;
+      position: relative;
+      height: 360px;
+      border-radius: 16px;
+      // display: block;
+      display: inline-block;
+      padding: 16px;
+      background: #4161A6;
+      .table-responsive {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+      }
+      .table {
+        width: 100%;
+        margin-bottom: 1rem;
+        color: #212529;
+        &-striped {
+            tbody {
+                tr{
+                    &:nth-of-type(odd) {
+                        background: rgba(0,0,0,.05);
+                    }
+                    td {
+                        border-top: 1px solid transparent;
+                        color: #fff;
+                        padding: 0.75rem;
+                        font-size: 14px;
+                        font-weight: 200;
+                        font-family: 'Montserrat';
+                        vertical-align: top;
+                    }
+                }
+            }
+        }
+      }
+      // &::before {
+      //   content: "";
+      //   position: absolute;
+      //   top: 50px;
+      //   bottom: 50%;
+      //   left: 0;
+      //   right: 50%;
+      //   background: rgba(0,0,0,.1);
+      //   transform: rotate(0deg);
+      //   border-radius: 0 0 16px 16px;
+      //   transform: skewY(10deg);
+      // }
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 60%;
+        background: rgba(0,0,0,.1);
+        transform: rotate(0deg);
+        border-radius:  16px 0 0 16px;
+        // transform: skewY(10deg);
+      }
+      // &::after {
+      //   content: "";
+      //   position: absolute;
+      //   top: 0;
+      //   bottom: 0;
+      //   left: 0;
+      //   right: 70%;
+      //   background: rgba(0,0,0,.1);
+      //   transform: rotate(10deg);
+      //   // border-radius:  16px 0 0 16px;
+      //   // transform: skewY(10deg);
+      // }
+      // &::after {
+      //   content: "";
+      //   position: absolute;
+      //   bottom: 50px;
+      //   top: 50%;
+      //   left: 0;
+      //   right: 50%;
+      //   background: rgba(0,0,0,.1);
+      //   transform: rotate(0deg);
+      //   border-radius: 0 0 16px 16px;
+      //   transform: skewY(-10deg);
+      // }
+      h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+      @media screen and (max-width:766px) {
+        width: 100%;
+        margin: 0;
+      }
+      .clear {
+        clear: both;
+      }
+      .image {
+        width: 45%;
+        height: 380px;
+        left: 0px;
+        top: -42px;
+        position: absolute;
+        @media screen and (max-width:766px) {
+          width: 50%;
+          height: 380px;
+          left: -14px;
+          bottom: -50px;
+          top: initial;
+          // position: absolute;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+      .data {
+        // display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        z-index: 16;
+        color: white;
+        width: 50%;
+        float: right;
+        @media screen and (max-width:766px) {
+          // vertical-align: middle;
+          // color: #fff;
+          width: 65%;
+          // float: right;
+        }
+        .table {
+          td {
+            border-top: 1px solid transparent;
+            color: white;
+            @media screen and (max-width:766px) {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  
+.bg{
+  &-kiper {
+    // background: #2a9976 !important;
+    background: #2a5f99 !important;
+  }
+  &-pass {
+    background: #3b885c !important;
+  }
+  &-shoot {
+    background: #65345f !important;
+  }
 }
