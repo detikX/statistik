@@ -255,6 +255,8 @@ font-family: 'Montserrat';
         font-family: 'Montserrat';
         div {
             color: #BDCDEE;
+            margin-bottom: 8px;
+            text-align: right;
         }
         }
     }
@@ -296,6 +298,8 @@ font-family: 'Montserrat';
         font-weight: 600;
         div {
             color: #BDCDEE;
+            margin-bottom: 8px;
+            text-align: right;
         }
         }
     }
@@ -401,6 +405,7 @@ font-family: 'Montserrat';
       h3 {
         font-size: 1.5rem;
         font-weight: 600;
+        margin-bottom: 16px;
       }
       @media screen and (max-width:766px) {
         width: 100%;
