@@ -223,18 +223,43 @@ font-family: 'Montserrat';
         width: 45%;
         height: 460px;
         position: relative;
-        border: 2px solid black;
+        // border: 2px solid black;
         border-radius: 16px;
         @media screen and (max-width:766px) {
         width: 100%;
         height: 320px;
+        }
+        .imagex {
+          width: 100%;
+          height: 100%;
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 16px;
+            object-fit: cover;
+          }
+        }
+        .image2 {
+          width: 50%;
+          height: 420px;
+          position: absolute;
+          right: 15%;
+          top: initial;
+          bottom: 15%;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
         }
         .image {
         width: 70%;
         height: 520px;
         position: absolute;
         left: -48px;
+        z-index: 2;
         top: -48px;
+        
         @media screen and (max-width:766px) {
             left: -14px;
             z-index: 9;
@@ -247,17 +272,49 @@ font-family: 'Montserrat';
         }
         }
         .score {
-        position: absolute;
-        right: 16px;
-        top: 20vh;
-        font-size: 2.3rem;
-        font-weight: 600;
-        font-family: 'Montserrat';
-        div {
-            color: #BDCDEE;
-            margin-bottom: 8px;
-            text-align: right;
-        }
+          position: absolute;
+          right: 0;
+          // background: #fff;
+          background: linear-gradient(to top, #001238, rgba(#001238,.1));
+          border-radius: 0 0 16px 16px;
+          padding: 8px;
+          /* top: 20vh; */
+          bottom: 0;
+          font-size: 2.3rem;
+          font-weight: 600;
+          font-family: "Montserrat";
+          left: 0;
+          display: block;
+          .valuex {
+            position: absolute;
+            bottom: 30%;
+            left: 50%;
+            list-style: none;
+            transform: translate(-50%, -50%);
+            display: block;
+            li {
+              display: inline-block;
+              color: white;
+            }
+          }
+          .flag {
+            display: inline-block;
+            color: white;
+            width: 45%;
+            .name {
+              // width: 100px;
+              font-size: 24px;
+              @media screen and (max-width:766px) {
+                font-size: 16px;
+              }
+            }
+          }
+          // div {
+          //   // color: #BDCDEE;
+          //   color: #2a5f99;
+          //   margin-bottom: 8px;
+          //   text-align: right;
+          // }
         }
     }
 
@@ -267,7 +324,7 @@ font-family: 'Montserrat';
         margin-left: 24px;
         height: 460px;
         position: relative;
-        border: 2px solid black;
+        // border: 2px solid black;
         border-radius: 16px;
         @media screen and (max-width:766px) {
         width: 100%;
@@ -275,14 +332,41 @@ font-family: 'Montserrat';
         height: 320px;
         margin-top: 72px;
         }
+        .imagex {
+          width: 100%;
+          height: 100%;
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 16px;
+            object-fit: cover;
+          }
+        }
+        .image2 {
+          width: 50%;
+          height: 420px;
+          position: absolute;
+          right: 15%;
+          top: initial;
+          bottom: 15%;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
         .image {
         width: 70%;
         height: 520px;
         position: absolute;
-        right: -48px;
+        left: -48px;
+        z-index: 2;
         top: -48px;
+        
         @media screen and (max-width:766px) {
-            top:-135px;
+            left: -14px;
+            z-index: 9;
+            top: -86px;
         }
         img {
             width: 100%;
@@ -291,19 +375,70 @@ font-family: 'Montserrat';
         }
         }
         .score {
-        position: absolute;
-        left: 5vw;
-        top: 5vh;
-        font-size: 2.3rem;
-        font-weight: 600;
-        div {
-            color: #BDCDEE;
-            margin-bottom: 8px;
-            text-align: right;
-        }
+          position: absolute;
+          right: 0;
+          // background: #fff;
+          background: linear-gradient(to top, #001238, rgba(#001238,.1));
+          border-radius: 0 0 16px 16px;
+          padding: 8px;
+          /* top: 20vh; */
+          bottom: 0;
+          font-size: 2.3rem;
+          font-weight: 600;
+          font-family: "Montserrat";
+          left: 0;
+          display: block;
+          .valuex {
+            position: absolute;
+            bottom: 30%;
+            left: 50%;
+            list-style: none;
+            transform: translate(-50%, -50%);
+            display: block;
+            li {
+              display: inline-block;
+              color: white;
+            }
+          }
+          .flag {
+            display: inline-block;
+            color: white;
+            width: 45%;
+            .name {
+              // width: 100px;
+              font-size: 24px;
+              @media screen and (max-width:766px) {
+                font-size: 16px;
+              }
+            }
+          }
+          // div {
+          //   // color: #BDCDEE;
+          //   color: #2a5f99;
+          //   margin-bottom: 8px;
+          //   text-align: right;
+          // }
         }
     }
     }
+}
+
+.imagex {
+  width: 420px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  height: 320px;
+  @media screen and (max-width:766px) {
+    width: auto;
+    height: 320px;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+  }
 }
 
 .statistik {
@@ -378,6 +513,18 @@ font-family: 'Montserrat';
         border-radius:  16px 0 0 16px;
         // transform: skewY(10deg);
       }
+      // .image-bg {
+      //   position: absolute;
+      //   left: 0;
+      //   right: 0;
+      //   top: 0;
+      //   bottom: 0;
+      //   img {
+      //     width: 100%;
+      //     height: 100%;
+      //     object-fit: cover;
+      //   }
+      // }
       // &::after {
       //   content: "";
       //   position: absolute;
@@ -474,3 +621,26 @@ font-family: 'Montserrat';
     background: #65345f !important;
   }
 }
+
+.color-text {
+  color: #f4f4f4;
+  // margin: 16px 0;
+  font-size: 1.5rem;
+  font-weight: 100;
+  width: 860px;
+  line-height: 2rem;
+  text-align: left;
+  margin: 16px auto;
+  @media screen and (max-width:766px) {
+    width: auto;
+  }
+}
+
+.headline {
+  background: #efbd2d;
+  width: fit-content;
+  color: white;
+  margin: 16px auto;
+  padding: 8px;
+}
+
